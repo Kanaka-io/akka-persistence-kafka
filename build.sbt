@@ -61,7 +61,5 @@ libraryDependencies ++= Seq(
   
 )
 
-EclipseKeys.withSource := true
-
 
 
