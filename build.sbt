@@ -2,9 +2,9 @@ organization := "com.github.krasserm"
 
 name := "akka-persistence-kafka"
 
-version := "0.5-SNAPSHOT"
+version := "0.6"
 
-isSnapshot := true
+isSnapshot := false
 
 scalaVersion := "2.11.6"
 
@@ -18,9 +18,9 @@ resolvers += "krasserm at bintray" at "http://dl.bintray.com/krasserm/maven"
 
 publishTo := {
   if (isSnapshot.value) {
-    Some("Snapshots at Nexus" at "http://nexus:8081/nexus/content/repositories/snapshots/")
+    Some("Snapshots at Ebiznext" at "http://art.ebiznext.com/artifactory/libs-snapshot-local")
   } else {
-    Some("Releases at Nexus" at "http://nexus:8081/nexus/content/repositories/releases/")
+    Some("Releases at Ebiznext" at "http://art.ebiznext.com/artifactory/libs-release-local")
   }
 }
 
